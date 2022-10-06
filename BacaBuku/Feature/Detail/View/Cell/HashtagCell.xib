@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HashtagCell" id="Yrp-Ho-CaN" customClass="HashtagCell" customModule="BacaBuku" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aK3-Ad-aWD">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58B-b3-G8Q">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hay-v8-Wge">
+                                <rect key="frame" x="29.5" y="8" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="Kwu-n1-edf"/>
+                            <constraint firstAttribute="height" constant="30" id="RIq-W4-4F3"/>
+                            <constraint firstItem="hay-v8-Wge" firstAttribute="centerY" secondItem="58B-b3-G8Q" secondAttribute="centerY" id="Tnh-cy-04Z"/>
+                            <constraint firstItem="hay-v8-Wge" firstAttribute="centerX" secondItem="58B-b3-G8Q" secondAttribute="centerX" id="Wo4-bs-ScX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="58B-b3-G8Q" secondAttribute="trailing" id="U7Y-2g-HoO"/>
+                    <constraint firstItem="58B-b3-G8Q" firstAttribute="leading" secondItem="aK3-Ad-aWD" secondAttribute="leading" id="aQj-tT-FAW"/>
+                    <constraint firstAttribute="bottom" secondItem="58B-b3-G8Q" secondAttribute="bottom" id="njd-x1-mYr"/>
+                    <constraint firstItem="58B-b3-G8Q" firstAttribute="top" secondItem="aK3-Ad-aWD" secondAttribute="top" id="oGV-RY-k9w"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="labelHashtag" destination="hay-v8-Wge" id="TAG-Q0-KoO"/>
+                <outlet property="viewHashtag" destination="58B-b3-G8Q" id="1Pn-lT-xtZ"/>
+            </connections>
+            <point key="canvasLocation" x="186" y="84"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_BacaBuku_BacaBukuUITests {
+  umbrella header "Pods-BacaBuku-BacaBukuUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
