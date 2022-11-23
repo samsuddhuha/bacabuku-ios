@@ -66,7 +66,7 @@ class HomeController: UIViewController {
             if !isPageRefreshing {
                 isPageRefreshing = true
                 page += 1
-                viewModel.getListBuku(offset: page*10)
+                viewModel.getListBuku(offset: page*6)
                 print("tess \(page)")
             }
         }
