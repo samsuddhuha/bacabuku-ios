@@ -39,9 +39,6 @@ class HomeController: UIViewController {
         }
         
         viewModel.successGetListBook = { listData in
-//            if !self.isPageRefreshing {
-//                self.listBook.removeAll()
-//            }
             
             for data in listData {
                 self.listBook.append(data)
@@ -67,9 +64,18 @@ class HomeController: UIViewController {
                 isPageRefreshing = true
                 page += 1
                 viewModel.getListBuku(offset: page*6)
-                print("tess \(page)")
             }
         }
+    }
+    
+    @IBAction func btnToFavoritWithoutDiffable(_ sender: Any) {
+        let vc = FavoritWithoutDiffableController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func btnToFavoritWithDiffable(_ sender: Any) {
+        let vc = FavoritWithDiffableController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

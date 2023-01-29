@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00EE0ABF2953F5D200C31C1C /* FavoritWithDiffableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE0ABE2953F5D200C31C1C /* FavoritWithDiffableController.swift */; };
+		00EE0AC12953F60F00C31C1C /* FavotritWithDiffableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE0AC02953F60F00C31C1C /* FavotritWithDiffableViewModel.swift */; };
+		00EE0AC32953F63A00C31C1C /* FavoritWithoutDiffableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE0AC22953F63A00C31C1C /* FavoritWithoutDiffableController.swift */; };
+		00EE0AC52953F66500C31C1C /* FavoritWithoutDiffableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE0AC42953F66500C31C1C /* FavoritWithoutDiffableViewModel.swift */; };
+		00EE0AC72953FEB500C31C1C /* FavoritDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE0AC62953FEB500C31C1C /* FavoritDiffableDataSource.swift */; };
 		16C16F121585371A5DF22CA0 /* Pods_BacaBukuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9729D390C4E3816AF826F4E6 /* Pods_BacaBukuTests.framework */; };
 		2875D6619C1917DA051B8831 /* Pods_BacaBuku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A505DB8CC195A1E0EB0B177C /* Pods_BacaBuku.framework */; };
 		3CA9ECE3B426B6F7152443E8 /* Pods_BacaBuku_BacaBukuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90900AF580A2E353E2B26C8 /* Pods_BacaBuku_BacaBukuUITests.framework */; };
@@ -57,6 +62,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00EE0ABE2953F5D200C31C1C /* FavoritWithDiffableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritWithDiffableController.swift; sourceTree = "<group>"; };
+		00EE0AC02953F60F00C31C1C /* FavotritWithDiffableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavotritWithDiffableViewModel.swift; sourceTree = "<group>"; };
+		00EE0AC22953F63A00C31C1C /* FavoritWithoutDiffableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritWithoutDiffableController.swift; sourceTree = "<group>"; };
+		00EE0AC42953F66500C31C1C /* FavoritWithoutDiffableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritWithoutDiffableViewModel.swift; sourceTree = "<group>"; };
+		00EE0AC62953FEB500C31C1C /* FavoritDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritDiffableDataSource.swift; sourceTree = "<group>"; };
 		1251D0AB33F076914BD98FE6 /* Pods-BacaBuku-BacaBukuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BacaBuku-BacaBukuUITests.debug.xcconfig"; path = "Target Support Files/Pods-BacaBuku-BacaBukuUITests/Pods-BacaBuku-BacaBukuUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3FAE098DB56C76024CA25AF1 /* Pods-BacaBuku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BacaBuku.release.xcconfig"; path = "Target Support Files/Pods-BacaBuku/Pods-BacaBuku.release.xcconfig"; sourceTree = "<group>"; };
 		43882BB29D11D30D6E5A2ACA /* Pods-BacaBuku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BacaBuku.debug.xcconfig"; path = "Target Support Files/Pods-BacaBuku/Pods-BacaBuku.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +137,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00EE0ABB2953F2BC00C31C1C /* Favorit */ = {
+			isa = PBXGroup;
+			children = (
+				00EE0ABD2953F2F500C31C1C /* Without */,
+				00EE0ABC2953F2F000C31C1C /* With */,
+			);
+			path = Favorit;
+			sourceTree = "<group>";
+		};
+		00EE0ABC2953F2F000C31C1C /* With */ = {
+			isa = PBXGroup;
+			children = (
+				00EE0ABE2953F5D200C31C1C /* FavoritWithDiffableController.swift */,
+				00EE0AC02953F60F00C31C1C /* FavotritWithDiffableViewModel.swift */,
+				00EE0AC62953FEB500C31C1C /* FavoritDiffableDataSource.swift */,
+			);
+			path = With;
+			sourceTree = "<group>";
+		};
+		00EE0ABD2953F2F500C31C1C /* Without */ = {
+			isa = PBXGroup;
+			children = (
+				00EE0AC22953F63A00C31C1C /* FavoritWithoutDiffableController.swift */,
+				00EE0AC42953F66500C31C1C /* FavoritWithoutDiffableViewModel.swift */,
+			);
+			path = Without;
+			sourceTree = "<group>";
+		};
 		09EF35236FB9D3C1CA06A265 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +247,7 @@
 			children = (
 				E1324BB028EF1F86005F494B /* Home */,
 				E1324BB128EF1F8B005F494B /* Detail */,
+				00EE0ABB2953F2BC00C31C1C /* Favorit */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -597,17 +636,22 @@
 				E1324B8228EF1F11005F494B /* HomeController.swift in Sources */,
 				E1324BC528EF2771005F494B /* HomeModel.swift in Sources */,
 				E1324BDB28EF4869005F494B /* StringExtension.swift in Sources */,
+				00EE0ABF2953F5D200C31C1C /* FavoritWithDiffableController.swift in Sources */,
 				E1324BD928EF485A005F494B /* DataExtension.swift in Sources */,
+				00EE0AC72953FEB500C31C1C /* FavoritDiffableDataSource.swift in Sources */,
 				E1324BCD28EF364E005F494B /* DetailBookController.swift in Sources */,
 				E1324BD728EF3CFD005F494B /* DetailBookModel.swift in Sources */,
 				E1324BBB28EF20C6005F494B /* ControllerExtension.swift in Sources */,
 				E1324BC728EF2AD7005F494B /* BookCell.swift in Sources */,
 				E1324BC328EF2324005F494B /* HomeViewModel.swift in Sources */,
 				E1324BDE28EF49CD005F494B /* HashtagCell.swift in Sources */,
+				00EE0AC12953F60F00C31C1C /* FavotritWithDiffableViewModel.swift in Sources */,
 				E1324BB928EF2094005F494B /* BaseViewModel.swift in Sources */,
 				E1324BB328EF1FA5005F494B /* Service.swift in Sources */,
 				E1324B7E28EF1F11005F494B /* AppDelegate.swift in Sources */,
+				00EE0AC32953F63A00C31C1C /* FavoritWithoutDiffableController.swift in Sources */,
 				E1324BCB28EF31E9005F494B /* ImageExtension.swift in Sources */,
+				00EE0AC52953F66500C31C1C /* FavoritWithoutDiffableViewModel.swift in Sources */,
 				E1324B8028EF1F11005F494B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
